@@ -1,0 +1,3 @@
+
+Logged request date: 11/13/2018 07:44 | Request type: Enrol to a course  | Server response: The student SOENS1234 is registered for the course SOEN1234 
+Logged request date: 11/13/2018 07:44 | Request type: Get class schedule  | Server response: COMP student courses = Student has not enrolled to any course in any semester in the department COMP | SOEN student courses = semester is WINTER and course is SOEN349, semester is WINTER and course is SOEN1234,  | INSE student courses = Student has not enrolled to any course in any semester in the department INSE 
