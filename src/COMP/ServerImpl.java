@@ -8,6 +8,7 @@ import java.net.MalformedURLException;
 import java.net.SocketException;
 import java.net.SocketTimeoutException;
 import java.net.URL;
+import java.rmi.RemoteException;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Map.Entry;
@@ -642,7 +643,7 @@ public class ServerImpl implements ServerInterface {
 	// max 3 courses per semester if part of the department and max 2 courses from
 	// this department if the student is from another department
 	protected synchronized boolean studentSemesterCourses(String studentID, String semester, String courseID)
-			throws MalformedURLException {
+			throws MalformedURLException, NumberFormatException, RemoteException {
 
 		URL wsdlURL1 = new URL("http://localhost:8080/ws/server");
 		URL wsdlURL2 = new URL("http://localhost:9090/ws/server");
